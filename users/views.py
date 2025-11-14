@@ -6,5 +6,5 @@ from rest_framework.decorators import permission_classes
 
 class CreateUserView(CreateAPIView):
     queryset = User.objects.all()
-    permission_classes =(permissions.AllowAny)
+    permission_classes =[permissions.AllowAny]
     serializer_class = SignUpSerializer
